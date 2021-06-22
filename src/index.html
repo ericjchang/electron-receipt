@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body>
+  <div style="text-align: center; width: 250px;">
+    <p >Ma & Pa's Bake Shop</p>
+    <span>Best Donuts & Cakes in Town!</span>
+    <br><br>
+    <p>SALE</p>
+    <br><br>
+    <div style="text-align: left;">
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+      <p>VISA</p>
+      <p>1048614</p>
+    </div>
+      <p>Card XXXX XXXX XXXX 2228</p>
+      <p>Card Present: John Doe</p>
+      <p>Card Entry Method: S</p>
+      <p>=============================</p>
+      </div>
+      <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <p>1</p>
+        <p>Dozen Donuts</p>
+        <p>$10,99</p>
+      </div>
+      <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <p>1</p>
+        <p>Box O' Joe</p>
+        <p>$6,99</p>
+      </div>
+      <br>
+      <div style="text-align: right;">
+        <p>Amount : $17,98</p>
+        <p>Tax : $1,35</p>
+        <br>
+        <p style="font-weight: bold;">Total : $19,33</p>
+      </div>
+      
+      <p>=============================</p>
+      <br><br>
+      <button id="current">
+        Print
+      </button>
+      <br><br>
+      You are using node
+      <script>
+        document.write(process.versions.node)
+      </script>, Chrome
+      <script>
+        document.write(process.versions.chrome)
+      </script>, and Electron
+      <script>
+        document.write(process.versions.electron)
+      </script>.
+  </div>
+
+  <!-- Adding Individual Renderer Process JS File -->
+  <script src="index.js"></script>
+</body>
+
+</html>
